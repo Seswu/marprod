@@ -1,0 +1,187 @@
+/* Colorful Theme - Vibrant, engaging */
+@import 'https://unpkg.com/marp-core@3/marp-core.css';
+
+:root {
+  --color-background: #ffffff;
+  --color-foreground: #2d3436;
+  --color-primary: #6c5ce7;
+  --color-secondary: #00cec9;
+  --color-accent: #fd79a8;
+  --color-warning: #fdcb6e;
+  --color-success: #00b894;
+  --color-text: #2d3436;
+  --color-text-light: #636e72;
+}
+
+section {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  padding: 60px 80px;
+  font-size: 28px;
+  line-height: 1.6;
+}
+
+section h1 {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 68px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+section h2 {
+  color: var(--color-secondary);
+  font-size: 48px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  border-left: 6px solid var(--color-accent);
+  padding-left: 20px;
+}
+
+section h3 {
+  color: var(--color-accent);
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+section a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+section a:hover {
+  color: var(--color-accent);
+}
+
+section code {
+  background-color: #dfe6e9;
+  color: var(--color-primary);
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 24px;
+}
+
+section pre {
+  background: linear-gradient(135deg, #dfe6e9 0%, #b2bec3 100%);
+  border-radius: 10px;
+  padding: 25px;
+  overflow: auto;
+}
+
+section pre code {
+  background-color: transparent;
+  color: var(--color-foreground);
+  padding: 0;
+}
+
+section blockquote {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+  border-left: 8px solid var(--color-warning);
+  padding: 20px 25px;
+  margin: 20px 0;
+  border-radius: 0 10px 10px 0;
+  font-style: italic;
+}
+
+section ul, section ol {
+  padding-left: 40px;
+}
+
+section li {
+  margin-bottom: 12px;
+}
+
+section li::marker {
+  color: var(--color-primary);
+}
+
+section table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+section table th {
+  background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+  color: white;
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+section table td {
+  padding: 12px;
+  border-bottom: 1px solid #dfe6e9;
+}
+
+section table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+section table tr:hover {
+  background-color: #dfe6e9;
+}
+
+section img {
+  max-width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Logo positioning */
+section::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 90px;
+  height: 45px;
+  background-image: var(--logo-url, none);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Title slide */
+section.lead {
+  background: linear-gradient(135deg, #6c5ce7 0%, #00cec9 50%, #fd79a8 100%);
+  color: white;
+}
+
+section.lead h1 {
+  -webkit-text-fill-color: white;
+  font-size: 76px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+section.lead h2 {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  border-left: none;
+  padding-left: 0;
+}
+
+/* Footer */
+section::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  font-size: 20px;
+  color: var(--color-text-light);
+}

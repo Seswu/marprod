@@ -1,0 +1,51 @@
+#+TITLE: Sprint Review
+#+AUTHOR: Dev Team
+#+DATE: 2026-04-29
+
+* Sprint 23 Review
+
+** Sprint Summary
+   April 22-29, 2026
+
+** Completed
+   - User auth v2 ✓
+   - Dashboard redesign ✓
+   - Performance optimization ✓
+
+** Velocity
+   32 story points (target: 30)
+
+* Metrics
+
+** Key Numbers
+
+| Metric        | Value    | Change |
+|---------------|----------|--------|
+| Uptime        | 99.97%   | +0.02% |
+| Response Time | 145ms    | -12ms  |
+| Bugs Fixed    | 23       | +5     |
+| PRs Merged    | 18       | +3     |
+
+* Blockers
+
+   - Design approval delayed (2 days)
+   - API credentials pending
+   - Database migration Friday 2AM
+
+* Next Sprint
+
+   1. Mobile app beta launch
+   2. API v3 documentation
+   3. Load testing
+   4. Security audit
+
+* Team Kudos
+
+   ✓ Sarah: Completed auth ahead of schedule
+   ✓ Mike: Fixed 12 critical bugs
+   ✓ Team: 94% test coverage achieved
+
+* Questions?
+
+   Slack: #dev-team
+   Email: team@company.com

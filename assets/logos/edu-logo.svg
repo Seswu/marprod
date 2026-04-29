@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="60" viewBox="0 0 200 60">
+  <rect width="200" height="60" fill="none"/>
+  <circle cx="30" cy="30" r="20" fill="none" stroke="#2c3e50" stroke-width="3"/>
+  <text x="25" y="37" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#2c3e50">E</text>
+  <text x="60" y="40" font-family="Georgia, serif" font-size="16" fill="#7f8c8d">EDU_INSTITUTE</text>
+</svg>

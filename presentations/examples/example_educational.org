@@ -1,0 +1,80 @@
+#+TITLE: Data Visualization Workshop
+#+AUTHOR: Instructor
+#+DATE: 2026-04-29
+
+* Data Visualization Workshop
+  :PROPERTIES:
+  :CUSTOM_ID: workshop
+  :END:
+
+** Welcome
+   Practical Statistics for Business
+
+** Learning Objectives
+   1. Understand visualization types
+   2. Interpret data charts
+   3. Create effective visualizations
+   4. Communicate insights
+
+* Chart Types
+
+** Common Visualizations
+
+| Chart Type   | Use Case                    |
+|--------------|-----------------------------|
+| Bar Chart    | Comparing categories         |
+| Line Chart   | Trends over time            |
+| Scatter Plot | Relationships between vars  |
+| Boxplot      | Distribution comparison     |
+
+* Example: Variance Analysis
+
+** Boxplot Chart
+   [[file:../content-folder/variance1_boxplot.png][Variance Boxplot]]
+
+** Key Components
+   - Q1, Q2 (median), Q3
+   - Whiskers: 1.5 × IQR
+   - Outliers: Beyond whiskers
+
+* Efficiency Metrics
+
+** Round Efficiency
+   [[file:../content-folder/alt3_efficiency_per_round.png][Efficiency per Round]]
+
+** Discussion
+   Different visualization methods reveal different insights.
+
+* Success Factors
+
+** Analysis by Debt
+   [[file:../content-folder/reason2_debt.png][Debt Analysis]]
+
+** Exercise
+   How does debt affect subscription likelihood?
+   Work in small groups for 10 minutes.
+
+* Income Distribution
+
+** Comparative Analysis
+   [[file:../content-folder/income_comparison_separate.png][Income Comparison]]
+
+* Best Practices
+
+   ✓ Always visualize data first
+   ✓ Choose appropriate chart type
+   ✓ Label axes and provide context
+   ✓ Use color purposefully
+   ✓ Tell a story with data
+
+* Resources
+
+** Further Reading
+   - *Think Stats* by Allen B. Downey
+   - *Data Science for Business* by Provost
+   - *Python for Data Analysis* by Wes McKinney
+
+* Questions & Discussion
+
+   Thank you for attending!
+   Email: instructor@university.edu
