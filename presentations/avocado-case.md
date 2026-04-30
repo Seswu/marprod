@@ -3,18 +3,18 @@ marp: true
 theme: data-viz
 paginate: true
 backgroundColor: #ffffff
-style: |
-  section::before {
-    content: url('../assets/logos/company-logo.svg');
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    height: 35px;
-  }
+  style: |
+    section::before {
+      content: url('../../assets/logos/company-logo.svg');
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      height: 35px;
+    }
 ---
 
 <!-- _class: lead -->
-<!-- _backgroundImage: url('../assets/images/avocado-whole.jpg') -->
+<!-- _backgroundImage: url('../../assets/images/avocado-whole.jpg') -->
 <!-- _backgroundSize: cover -->
 
 # Avocado Case
@@ -50,12 +50,12 @@ Udforskende undersøgelse bestilt af Denzel Avocado Farms; 6 forkellige (og yder
 <div class="columns">
 <div class="column">
 
-![width:450px](../content-folder/avocado-case/plots/1_salgsudvikling-for-avocado-typer.svg)
+![width:450px](../../content-folder/avocado-case/plots/1_salgsudvikling-for-avocado-typer.svg)
 
 </div>
 <div class="column">
 
-![width:450px](../content-folder/avocado-case/plots/6_udvikling-i-gennemsnitspris.svg)
+![width:450px](../../content-folder/avocado-case/plots/6_udvikling-i-gennemsnitspris.svg)
 
 </div>
 </div>
@@ -82,12 +82,12 @@ Udforskende undersøgelse bestilt af Denzel Avocado Farms; 6 forkellige (og yder
 <div class="columns">
 <div class="column">
 
-![width:450px](../content-folder/avocado-case/plots/2_Udvikling-i-salgsandele-for-avocado-typer.svg)
+![width:450px](../../content-folder/avocado-case/plots/2_Udvikling-i-salgsandele-for-avocado-typer.svg)
 
 </div>
 <div class="column">
 
-![width:450px](../content-folder/avocado-case/plots/4_forbrug-af-hver-avocado-type.svg)
+![width:450px](../../content-folder/avocado-case/plots/4_forbrug-af-hver-avocado-type.svg)
 
 </div>
 </div>
@@ -111,7 +111,7 @@ Udforskende undersøgelse bestilt af Denzel Avocado Farms; 6 forkellige (og yder
 
 ---
 
-![width:900](../content-folder/avocado-case/plots/3_forbrug-ift-maanedsdag.svg)
+![width:900](../../content-folder/avocado-case/plots/3_forbrug-ift-maanedsdag.svg)
 
 ---
 
@@ -131,7 +131,7 @@ Der er kun en meget svagt nedadgående tendens; det virker som om forbruget er n
 
 ---
 
-![width:900](../content-folder/avocado-case/plots/5_sammenhaenge-mellem-pris-og-volumen.svg)
+![width:900](../../content-folder/avocado-case/plots/5_sammenhaenge-mellem-pris-og-volumen.svg)
 
 ---
 
@@ -147,7 +147,7 @@ Der er variationer inden for dette mønster - måske sæson-betonede.
 
 ---
 
-<!-- _backgroundImage: url('../assets/images/avocado-farming.jpg') -->
+<!-- _backgroundImage: url('../../assets/images/avocado-farming.jpg') -->
 <!-- _backgroundSize: cover -->
 
 ## Yderligere Analyser
@@ -162,7 +162,7 @@ Der er variationer inden for dette mønster - måske sæson-betonede.
 
 ---
 
-<!-- _backgroundImage: url('../assets/images/avocado-food.jpg') -->
+<!-- _backgroundImage: url('../../assets/images/avocado-food.jpg') -->
 <!-- _backgroundSize: cover -->
 
 ## Kontakt
