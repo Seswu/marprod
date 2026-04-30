@@ -1,0 +1,213 @@
+# Avocado-case
+
+## Introduktion
+
+- Daytona Analytics
+- 7 ugers direkte on-site erfaring
+- Besvarer ethvert analysespørgsmål
+- ..og vi mener det
+- **Alle** spørgsmål
+
+## Opgaven
+
+Udforskende undersøgelse bestilt af Denzel Avocado Farms; 6 forkellige (og yderst specifikke) spørgsmål til brug for salgsplanlægningen blandt Michoacán Avocado Farmer's Collective, MAFC.
+
+## 1: Udvikling af antal solgte avocadoer
+
+-   Plot
+    -   Salgsudvikling for avocado-typer
+-   Datakolonner
+    -   Total.Volume
+    -   Year
+    -   Type
+-   Filtre
+    -   Region = TotalUS
+    -   Year != 2018
+
+## 2: Udvikling af andelen af antal solgte avocadoer
+
+-   Plot
+    -   Udvikling i salgsandele for avocado-typer
+-   Datakolonner
+    -   Total.Volume
+    -   Year
+    -   Type
+-   Filtre
+    -   Region = TotalUS
+    -   Year != 2018
+
+## 3: v Forbrug ift maanedens dage
+
+-   Plot
+    -   Forbrug ift maanedsdag
+-   Datakolonner
+    -   Total.Volume
+    -   Date
+    -   AveragePrice
+-   Filtre
+    -   Region = TotalUS
+    -   Date = 1, 2, 3, 4, ... 30, 31
+    -   Year != 2018
+-   Savtakket graf
+    -   Kombination af to ting
+        -   Variation i forbrug pr aar
+        -   Aarenes registreringsdage er cyklisk forskudte
+
+****Hvor mange penge bruger folk paa avocadoer fordelt paa dagene i hver
+maaned?**** Der er kun en meget svagt nedadgaaende tendens; det virker
+som om forbruget er naesten konstant.
+
+## 4: Forbrug paa hver type af avocadoer i hele datasaettet
+
+-   Plot
+    -   Forbrug af hver avocado-type
+-   Datakolonner
+    -   AveragePrice
+    -   Total.Volume
+    -   Type
+-   Filtre
+    -   Region = TotalUS
+    -   Year != 2018
+
+## 5: v Sammenhaenge mellem den gennemsnitlige pris og den totale volumen
+
+-   Plot
+    -   Sammenhaenge mellem pris og volumen
+-   Datakolonner
+    -   AveragePrice
+    -   Total.Volume
+-   Filtre
+    -   Region = TotalUS
+    -   Year != 2018
+
+Der er en gruppering i punktvisningen. Det drejer sig formentlig om
+conventionals der saelges i store maengder til lav pris, ift organics
+der saelges i signifikant mindre maengder til hoejere priser.
+
+****Saelges der flere naar de er billige?**** Ja, mange salg sker ved
+lav pris. Der er nogle variationer inden for dette moenster - maaske
+saeson-betonede.
+
+## 6: (v) Udvikling af gennemsnitspris for hver type af avocado
+
+-   plot
+    -   Udvikling i gennemsnitspris
+-   datakolonner
+    -   AveragePrice
+    -   Total.Volume
+    -   Type
+    -   Year
+-   Filtre
+    -   Region = TotalUS
+    -   Year != 2018
+-   Note
+    -   Vaegtet gennemsnit er pr type pr aar
+
+Der ses en stigning i gennemsnitspris for avocadoer af begge typer
+
+## Yderligere Analyser
+
+1: Salgskanaler
+- Vælg de optimale salgskanaler ift profitmargen, salgsmængder og pålidelighed
+- Pain point analyse til sikring af samarbejdet
+
+2: Sæsonvariationer
+- Maksimer profit ift sæsonen ved at vælge de rigtige salgspriser
+- Time series analyse for at identificere sæsonmønstre
+
+3: Differentiering ift Konkurrenterne
+- Cost/benefit analyser af udvalgte certificationer (eg økologisk, fair trade, klima)
+- Undersøgelse af udvalgte salgskanalers prioriteter (eg størrelse, økologi, modenhed)
+
+## Kontakt
+
+- Daytona Analytics
+- 7 ugers direkte on-site erfaring
+- Besvarer ethvert analysespørgsmål
+
+Email: any-questions-answered@daytona.dk
+Phone: +45 11 22 33 44
+BlueSky: #Daytona-Answers-All
+
+## Datavalidering
+
+-   Row
+    -   Kun 52
+    -   Kontra 18.000 linjer data
+    -   Dvs anden afhaengighed
+-   Date
+    -   4 aars data
+    -   2018 kun foerste 3 maaneder
+    -   Ikke data fra alle datoer
+    -   Altid med 7 dage imellem
+-   AveragePrice
+    -   Svinger ml 0.44 og 3.25; dvs store forskelle
+-   Total Volume
+    -   Svinger meget; ml 381 og 61 millioner
+    -   Total fra foerste 3 maaneder af 2018 meget lille?
+-   Avocado \'antal\'
+    -   4042, 4225, 4770, Total Bags angives som \'antal\'
+    -   Men er ikke i heltal
+    -   Antagelse: Antal = Solgte gram / gennemsnitsstoerrelse
+    -   I saa fald vil \'antal\' svinge ift solgte stoerrelser
+-   Hvad er en del af hvad?
+    -   Total.Volume: 4042 + 4225 + 4770 + Total Bags
+    -   Total Bags: Small Bags + Large Bags + XLarge Bags
+    -   Hvorfor blande \'antal\' net med \'antal\' enkelt-avocadoer?
+        -   Maaske \'antal\' Bags ogsaa taelles som enkelt-avocadoer?
+        -   Kunne undersoeges
+-   4042
+    -   \"smaa/medium: 80-140 gram\"
+    -   0 (i alt) til 21 millioner
+-   4225
+    -   \"store: 226-283 gram\"
+    -   (det ses at avocadoer mellem 141 og 225 gram ikke eksisterer)
+    -   30 (i alt) til 20 millioner
+-   4770
+    -   \"ekstra store: 226-425 gram\"
+    -   (dvs \'store\' kan ogsaa saelges som \'ekstra store\' da de
+        passer til skala
+    -   Fra 0 (i alt) til 2 millioner
+-   Total Bags
+    -   0-16 millioner
+-   Small, Large og XLarge Bags
+    -   0 til respektivt 12, 4 og 0.5 millioner
+-   Type
+    -   \'conventional\' eller \'organic\'
+    -   ingen tomme felter
+-   Year
+    -   2015, 2016, 2017, 2018, som forventet
+-   Region
+    -   Angivet i opgave som vaerende amerikanske delstater
+    -   Er nogle gange faktisk en by
+    -   Andre gange en delstat
+    -   Kan ogsaa vaere \'TotalUS\'
+    -   Af og til meget speciel, f.eks \'NewOrleansMobile\'
+    -   Er nok en sammenblanding af omraadeangivelse og salgsmetodikker
+    -   Kan nok overlappe, isaer delstater vs byer vs TotalUS
+    -   Tager udgangspunkt i TotalUS medmindre andet giver mening ift
+        spoergsmal
+
+## Beregningseksempel
+
+-   
+
+## Udgangspunkt
+
+-   Kontekst
+    -   Priserne paa avocadomarkedet svinger en del
+-   Maal
+    -   Er der tegn paa avocado-apokalypse?
+-   Scope
+    -   Fuldfoersel af stillet opgave
+-   Out of scope
+    -   Svarkvalitet
+    -   Bedre spoergsmaal
+    -   De faktiske beregninger
+
+## Metode
+
+-   Løs datavalidering
+-   Tolkning af data baseret på formodninger
+-   Løse spot-checks på formodninger
+-   Løbende check af om antal behandlede poster er som forventet
