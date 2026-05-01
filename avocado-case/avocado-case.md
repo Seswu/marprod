@@ -1,8 +1,9 @@
 ---
 marp: true
 paginate: true
-backgroundColor: #ff4fbf
 ---
+
+<!-- backgroundColor: #A2F506 -->
 
 # Avocado Case
 
@@ -26,104 +27,111 @@ Udforskende undersøgelse bestilt af Denzel Avocado Farms; 6 forkellige (og yder
 
 ---
 
-## 1: Udvikling af antal solgte avocadoes
+![bg](avocadoes/bunch_marta-weronika--Imp19esjyI-unsplash.jpg)
+<!-- _color: white -->
 
-- Plot: Salgsudvikling for avocado-typer
+## 1: Udvikling af antal solgte avocadoer
+
 - Datakolonner: Total.Volume, Year, Type
 - Filtre: Region = TotalUS, Year != 2018
 
 ---
 
+## Indsigter: Salgsudvikling
 
-![width:450px](../../content-folder/avocado-case/plots/1_salgsudvikling-for-avocado-typer.svg)
+![bg left contain](plots/1_salgsudvikling-for-avocado-typer.svg)
 
-
-![width:450px](../../content-folder/avocado-case/plots/6_udvikling-i-gennemsnitspris.svg)
-
-
----
-
-## Indsigter: Salgsudvikling & Pris
-
-- Stigning i gennemsnitspris for avocadoer af begge typer
-- Vægtet gennemsnit pr type pr år
+- Støt stigende salg
 - Salgsvolumen varierer betydeligt over perioden 2015-2017
 
 ---
 
-## 2: Udvikling i salgsandele & Forbrug
+![bg left contain](plots/6_udvikling-i-gennemsnitspris.svg)
 
-- Plot: Udvikling i salgsandele for avocado-typer
-- Plot: Forbrug af hver avocado-type
+## Indsigter: Pris
+
+- Stigning i gennemsnitspris for avocadoer af begge typer
+- Vægtet gennemsnit pr type pr år
+
+---
+
+![bg brightness:0.7](avocadoes/hanging-out_john-cameron-zmbzKaJ3C1w-unsplash.jpg)
+
+<!-- _color: white -->
+<!--  -->
+
+## 2: Fordelingen ml økologiske og konventionelle avocadoer
+
 - Datakolonner: Total.Volume, AveragePrice, Type
 - Filtre: Region = TotalUS, Year != 2018
 
 ---
 
+![bg right contain](plots/4_forbrug-af-hver-avocado-type.svg)
 
-![width:450px](../../content-folder/avocado-case/plots/2_Udvikling-i-salgsandele-for-avocado-typer.svg)
+## Indsigter: Fordeling af forbrug
 
-
-![width:450px](../../content-folder/avocado-case/plots/4_forbrug-af-hver-avocado-type.svg)
-
-
----
-
-## Indsigter: Andele & Forbrug
-
-- Conventional vs organic salgsandele over tid
 - Forbrug fordelt på avocado-typer
-- Organics udgør en mindre men stabil andel
+- Økologiske udgør en ganske lille andel
 
 ---
+
+![bg right contain](plots/2_Udvikling-i-salgsandele-for-avocado-typer.svg)
+
+## Indsigter: Udvikling i salgsandele
+
+- Konventionelle vs økologiske salgsandele over tid
+- Økologiske udgør en lille men stigende andel
+
+---
+
+![bg left](avocadoes/bread-olives_bakd-raw-by-karolin-baitinger-qqHBM0MXaMY-unsplash.jpg)
 
 ## 3: Forbrug ift månedsdag
 
-- Plot: Forbrug ift maanedsdag
 - Datakolonner: Total.Volume, Date, AveragePrice
 - Filtre: Region = TotalUS, Year != 2018
-- Savtakket graf: Variation i forbrug pr år kombineret med cykliske registreringsdage
 
 ---
 
-![width:900](../../content-folder/avocado-case/plots/3_forbrug-ift-maanedsdag.svg)
+![bg](plots/3_forbrug-ift-maanedsdag.svg)
 
 ---
 
 ## Indsigter: Forbrug ift dage
 
 **Hvor mange penge bruger folk på avocadoer fordelt på dagene i hver måned?**
-
 Der er kun en meget svagt nedadgående tendens; det virker som om forbruget er næsten konstant.
+
+- Savtakket graf: Variation i forbrug pr år kombineret med cykliske registreringsdage
 
 ---
 
+![bg right contain](avocadoes/gnana-prakash-23hP7UrsJA4-unsplash.jpg)
+
 ## 5: Sammenhæng mellem pris og volumen
 
-- Plot: Sammenhaenge mellem pris og volumen
 - Datakolonner: AveragePrice, Total.Volume
 - Filtre: Region = TotalUS, Year != 2018
 
 ---
 
-![width:900](../../content-folder/avocado-case/plots/5_sammenhaenge-mellem-pris-og-volumen.svg)
-
----
+![bg left contain](plots/5_sammenhaenge-mellem-pris-og-volumen.svg)
 
 ## Indsigter: Pris vs Volumen
 
 **Sælges der flere når de er billige?**
+Ja, mange salg sker ved lav pris.
 
-Ja, mange salg sker ved lav pris. Der er gruppering i punktvisningen:
-- Conventionals sælges i store mængder til lav pris
-- Organics sælges i mindre mængder til højere priser
+Der er gruppering i punktvisningen:
+- Konventionelle sælges i store mængder til lav pris
+- Økologiske sælges i mindre mængder til højere priser
 
 Der er variationer inden for dette mønster - måske sæson-betonede.
 
 ---
 
-<!-- _backgroundImage: url('../../assets/images/avocado-farming.jpg') -->
-<!-- _backgroundSize: cover -->
+![bg blur brightness:1.3](avocadoes/smorgasbord_avocado_pexels_04.jpg)
 
 ## Yderligere Analyser
 
@@ -137,42 +145,22 @@ Der er variationer inden for dette mønster - måske sæson-betonede.
 
 ---
 
-<!-- _backgroundImage: url('../../assets/images/avocado-food.jpg') -->
-<!-- _backgroundSize: cover -->
+# Spørgsmål?
 
-## Kontakt
+## Daytona Analytics
 
-- Daytona Analytics
 - 7 ugers direkte on-site erfaring
 - Besvarer ethvert analysespørgsmål
 
-**Email:** any-questions-answered@daytona.dk
-**Phone:** +45 11 22 33 44
-**BlueSky:** #Daytona-Answers-All
-
----
-
-## Datavalidering
-
-- **Row:** Kun 52 rækker kontra 18.000 linjer data
-- **Date:** 4 års data, 2018 kun første 3 måneder, altid 7 dage imellem
-- **AveragePrice:** Svinger ml 0.44 og 3.25
-- **Total Volume:** Svinger ml 381 og 61 millioner
-- **Type:** 'conventional' eller 'organic'
+- **Email:** any-questions-answered@daytona.dk
+- **Phone:** +45 11 22 33 44
+- **BlueSky:** #Daytona-Answers-All
 
 ---
 
 ## Metode
 
-- Løs datavalidering
-- Tolkning af data baseret på formodninger
-- Løse spot-checks på formodninger
-- Løbende check af om antal behandlede poster er som forventet
-
----
-
-# Spørgsmål?
-
-## Daytona Analytics
-
-any-questions-answered@daytona.dk
+- Hastighedsoptimeret datavalidering
+- Tolkning af data baseret på erfaringsbaserede antagelser
+- Repræsentative spot-checks af antagelser
+- Løbende krydscheck af beregninger
